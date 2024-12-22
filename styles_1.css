@@ -1,0 +1,116 @@
+/* -----------------------
+   1. 全域與版面設定
+   ----------------------- */
+
+/* 讓所有元素的預設外距與內距都歸零，確保版面更好掌控 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+   整體色系設定： 
+   - 使用柔和的米色背景 (body)
+   - 文字採用較深的灰褐色
+   - 頁面整體風格偏向無印簡約風 
+*/
+body {
+    font-family: 'Microsoft JhengHei', sans-serif; /* 常見中文字體，可自行更換 */
+    line-height: 1.6;
+    background-color: #FAF9F7; /* 柔和米色 */
+    color: #3E3A39;           /* 深灰褐色 */
+    /* 若想要再偏淺一點，可嘗試 #444 或其他深淺度 */
+}
+
+/* 
+   建議頁面最大寬度，並置中。
+   可自行調整 max-width 。
+*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* -----------------------
+   2. 頁首區域樣式
+   ----------------------- */
+
+header {
+    background-color: #F9F8F6;    /* 淺灰米色背景，讓區塊與 body 略有區別 */
+    border-bottom: 1px solid #E5E4E1; 
+    padding: 1em;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    color: #3E3A39;  /* 與 body 相同深色 */
+}
+
+/* 導覽列 */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3E3A39;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #B0A88D; /* 稍深的大地色 */
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* -----------------------
+   3. 主內容區樣式
+   ----------------------- */
+
+section {
+    background-color: #F9F8F6;   /* 與 header 相同或類似色系，維持簡約風 */
+    margin: 2em 0;
+    padding: 1.5em;
+    border-radius: 6px;
+    border: 1px solid #E5E4E1;   /* 替代 box-shadow，以更簡約的線條呈現 */
+}
+
+/* 
+   將每個 h2 的上下邊距加大 
+   例如可將上方邊距設為 3em，下方 1em
+*/
+section h2 {
+    margin: 1em 0 1em 0; 
+    font-size: 1.6em;
+    color:#3e3a39; /* 深灰褐色 */
+}
+
+/* 說明文字段落 */
+section p {
+    margin-bottom: 1.2em;
+    line-height: 1.8;
+}
+
+/* -----------------------
+   5. 頁尾區域
+   ----------------------- */
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #F9F8F6;
+    border-top: 1px solid #E5E4E1;
+    margin-top: 2em;
+}
+
+footer p {
+    color: #7F7B79; /* 稍淺的灰褐色 */
+    font-size: 0.9em;
+}
